@@ -35,7 +35,7 @@ abs_diff=float(abs(float(yesterday_closing_price)-float(day_before_closing_price
 
 diff_percent=(abs_diff/float(yesterday_closing_price))*100
 
-if diff_percent>0.4:
+if diff_percent>5:
     news_paras = {
         "apiKey": news_key,
         "qInTitle": COMPANY_NAME
